@@ -1,0 +1,8 @@
+
+Annotations:
+  - @Test
+  - @BeforeMethod
+  - @AfterMethod
+  - @BeforeClass
+  - @AfterCLass
+  - TestNg-Xml-file
