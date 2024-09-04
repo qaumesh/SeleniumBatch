@@ -6,3 +6,6 @@ Annotations:
   - @BeforeClass
   - @AfterCLass
   - TestNg-Xml-file
+  - DataProvider
+  - invocationCount
+  - Parameter
