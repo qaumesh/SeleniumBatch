@@ -1,0 +1,27 @@
+Configs file
+PropertiesClass
+
+ReaderClass..
+
+public class ReaderClass {
+	public String get(String key) throws Exception {
+		FileInputStream file=new FileInputStream("./config.properties");
+		Properties prop =new Properties();
+		prop.load(file);
+		return (String) prop.get(key);
+	}
+}
+
+
+Config.propertiesFile
+browsrName=FIREFOX
+url=https://flippa.com/
+username=standard_user
+passward=secret_sauce
+itemPurchased=Sauce Labs Bolt T-Shirt
+firstName=narendra
+lastName=falak
+zipCode=12345
+
+
+Try to use properties in selenium code.
