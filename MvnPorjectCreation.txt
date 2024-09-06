@@ -1,0 +1,9 @@
+Mavn project creation
+
+1) mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=<projectName> -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DinteractiveMode=false
+2) delete default all packages
+3)cmd same project directory mvn clean test
+
+4) before import project to eclips , run command : mvn eclipse:eclipse
+
+5) project import and mvn update
