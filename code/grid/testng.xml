@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" thread-count="3">
+
+
+
+
+ 
+	
+  <test thread-count="1" name="Test1" >
+  
+  <parameter name = "browsername" value="FF"/>
+  
+    <classes>
+      <class name="com.testcases.ParamaterAnnotaion"/>
+      <class name="com.testcases.BeforeAfterTest"/>
+    </classes>
+    
+  </test> 
+  
+  
+  <test thread-count="1" name="Test2" >
+  <parameter name = "browsername" value="CH"/>
+    <classes>
+      <class name="com.testcases.ParamaterAnnotaion"/>
+      <class name="com.testcases.BeforeAfterTest"/>
+    </classes>
+  </test> 
+  
+  
+  <test thread-count="1" name="Test3" >
+  <parameter name = "browsername" value="EDGE"/>
+    <classes>
+      <class name="com.testcases.ParamaterAnnotaion"/>
+      <class name="com.testcases.BeforeAfterTest"/>
+    </classes>
+  </test>  
+  
+  
+  
+  
+  
+</suite> <!-- Suite -->

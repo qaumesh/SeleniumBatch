@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" name="Test3(failed)">
+    <parameter name="browsername" value="EE"/>
+    <classes>
+      <class name="com.testcases.ParamaterAnnotaion">
+        <methods>
+          <include name="getData"/>
+          <include name="teardrop"/>
+          <include name="startBrower"/>
+        </methods>
+      </class> <!-- com.testcases.ParamaterAnnotaion -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

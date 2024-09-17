@@ -1,0 +1,56 @@
+package com.testcases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import utility.GetProperty;
+
+public class ParamaterAnnotaion {
+
+	static WebDriver driver=null;
+	
+	@Parameters("browsername")
+	@BeforeMethod 
+	public void startBrower(String browsername) {
+		System.out.println("BrowserName :"+browsername);
+		if(browsername.equals("CH")) {
+			driver=new ChromeDriver();
+		}else if(browsername.equals("FF")) {
+			driver=new FirefoxDriver();
+		}else if(browsername.equals("EDGE")) {
+			driver=new EdgeDriver();
+		}
+	}
+	
+	
+	
+	@Test 
+	public void getData() throws InterruptedException {
+		
+		driver.get("https://www.amazon.in");
+		
+		//
+		//
+		
+		Thread.sleep(3000);
+		
+	}
+	
+	@AfterMethod
+	public void teardrop() {
+		driver.close();
+	}
+	
+	//@DataProvider(name = "browserNames")
+   // public Object[][] dataProviderMethod() {
+     //   return new Object[][] { { "CH" }, { "FF" }, { "EDGE" } };
+    //}
+}
