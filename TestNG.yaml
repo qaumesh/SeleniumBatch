@@ -9,3 +9,5 @@ Annotations:
   - DataProvider
   - invocationCount
   - Parameter
+  -@AfterTest
+  -@AfterTest
